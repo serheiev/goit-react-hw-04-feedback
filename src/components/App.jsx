@@ -10,7 +10,6 @@ export const App = () => {
     const {
       target: { name, value },
     } = e;
-    console.log(name, value);
     setOptions(prevState => ({
       ...prevState,
       [name]: Number.parseInt(value) + 1,
